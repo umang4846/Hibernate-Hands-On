@@ -16,5 +16,11 @@
         <mapping class="com.hibernate.handson.Address"/>
         <mapping class="com.hibernate.handson.embeddable_annotation.Student"/>
         <mapping class="com.hibernate.handson.embeddable_annotation.Certificate"/>
+        <mapping class="com.hibernate.handson.one_to_one.Question"/>
+        <mapping class="com.hibernate.handson.one_to_one.Answer"/>
+        <mapping class="com.hibernate.handson.one_to_many.QuestionOtoM"/>
+        <mapping class="com.hibernate.handson.one_to_many.AnswerOtoM"/>
+        <mapping class="com.hibernate.handson.many_to_many.Employee"/>
+        <mapping class="com.hibernate.handson.many_to_many.Project"/>
     </session-factory>
-</hibernate-configuration>
+</hibernate-configuration>1

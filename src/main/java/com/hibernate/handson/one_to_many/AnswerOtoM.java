@@ -1,4 +1,4 @@
-package com.hibernate.handson.one_to_one;
+package com.hibernate.handson.one_to_many;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -12,15 +12,15 @@ import javax.persistence.*;
 @Getter
 @Setter
 @Entity
-@Table(name = "question")
-public class Question {
+@Table(name = "answer_one_to_many")
+public class AnswerOtoM {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int questionId;
+    private int answerId;
 
-    private String question;
+    private String answer;
 
-    @OneToOne
-    @JoinColumn(name = "answer_id")
-    private Answer answer;
+    @ManyToOne
+    //@JoinColumn(name = "question_id")
+    private QuestionOtoM question;
 }
